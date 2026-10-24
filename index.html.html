@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Cup v.2 - turniej kartingowy</title>
+</head>
+<body>
+    <header>
+        <h1>Cart Cup v.2</h1>
+        <nav>
+            <ul>
+                <li><a href="#zapisy">Zapisy</a></li>
+                <li><a href="#regulamin">Regulamin</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#wyniki">Wyniki</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>O turnieju</h2>
+            <p>
+                Witajcie! Wielkimi krokami zbliża się termin drugiej edycji Cart Cup.
+                Cart Cup to turniej kartingowy organizowany na naszym obiekcie.
+                Zasady są proste: osiągnąć jak najlepszy czas na dystansie 3 okrążeń!
+                Myślisz, że dasz radę? Wyślij do nas zgłoszenie. Powodzenia!
+            </p>
+        </section>
+        <section id="zapisy">
+            <h3>Zapisy</h3>
+            <p>
+                Aby wziąć udział w turnieju, należy wypełnić formularz zgłoszeniowy.
+                Formularz dostępny jest poniżej.
+            </p>
+            <form>
+                <label for="name">Imię i nazwisko</label>
+                <input type="text" id="name" name="name" placeholder="Jan Kowalski" required>
+                <label for="age">Wiek</label>
+                <input type="number" id="age" name="age" min="15" max="99"  required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email@.com" required>
+                <label>
+                <input type="radio" name="wybor" value="opcja1">Zaawansowany</label>
+                <label>
+                <input type="radio" name="wybor" value="opcja2">Początkujący</label>
+                <label>
+                <input type="checkbox" name="zgoda" value="tak" required>Akceptuję regulamin</label>
+                <button type="submit">Zapisz się</button>
+            </form>
+            </section>
+            <section id="regulamin">
+                <h3>Regulamin</h3>
+                <p>
+                    1. Uczestnicy muszą mieć ukończone 15 lat.
+                    <br>
+                    2. Każdy uczestnik poniżej 18 roku życia musi posiadać pisemną zgodę rodzica lub opiekuna prawnego.
+                    <br>
+                    3. Każdy uczestnik musi posiadać ważny dokument tożsamości.
+                    <br>
+                    4. Wszyscy uczestnicy muszą przestrzegać zasad bezpieczeństwa na torze.
+                    <br>
+                    5. Organizator zastrzega sobie prawo do dyskwalifikacji uczestnika w przypadku naruszenia regulaminu.
+                </p>
+                
+                </section>
+                <section id="galeria">
+                    <h3>Galeria</h3>
+                    <p>
+                        Zobacz zdjęcia z poprzedniej edycji turnieju Cart Cup.
+                    </p>
+                    <img src="https://images.pexels.com/photos/5640576/pexels-photo-5640576.jpeg" alt="Zdjęcie z turnieju 1" style width="300px" height="auto">
+                    <img src="https://images.pexels.com/photos/5640523/pexels-photo-5640523.jpeg" alt="Zdjęcie z turnieju 2" style width="300px" height="auto">
+                    <img src="https://images.pexels.com/photos/5640586/pexels-photo-5640586.jpeg" alt="Zdjęcie z turnieju 3" style width="300px" height="auto">
+                    <img src="https://images.pexels.com/photos/5640579/pexels-photo-5640579.jpeg" alt="Zdjęcie z turnieju 4" style width="300px" height="auto">
+                </section>
+                <section id="wyniki">
+                    <h3>Wyniki z poprzedniej edycji</h3>
+                    <table>
+                        <caption>Top 3 Grupa zaawansowana</caption>
+                        <tr>
+                            <th>Miejsce</th>
+                        <th>Kierowca</th>
+                        <th>Czas</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Gruby</td>
+                            <td>12.34</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Drajwer</td>
+                            <td>13.04</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>cFFaniaK</td>
+                                <td>15.23</td>
+                            </tr>
+                        
+                    </table>
+                    <table>
+                        <caption>Top 3 Grupa początkująca</caption>
+                        
+                        <tr>
+                            <th>Miejsce</th>
+                            <th>Kierowca</th>
+                            <th>Czas</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Wojtek</td>
+                            <td>14.34</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Janek</td>
+                            <td>15.04</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Kuba</td>
+                            <td>16.23</td>
+                        </tr>
+                    </table>
+                </section>
+            
+            </main>
+
+    <footer>
+        <p>&copy; 2026 Cart Cup</p>
+    </footer>
+</body>
+</html>
