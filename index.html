@@ -150,5 +150,26 @@
         <a href="mailto:mateusz.mionskowski123@gmail.com">mateusz.mionskowski123@gmail.com</a>
         <a href="phone:732853333">732853333</a>
     </footer>
+    <dialog id="podglad-zdjecia" aria-label="Podgląd zdjęcia">
+    <button id="zamknij-podglad" type="button" aria-label="Zamknij podgląd">×</button>
+    <img id="powiekszone-zdjecie" src="" alt="">
+</dialog>
+
+<script>
+    const podglad = document.querySelector("#podglad-zdjecia");
+    const powiekszoneZdjecie = document.querySelector("#powiekszone-zdjecie");
+
+    document.querySelectorAll("img").forEach((zdjecie) => {
+        zdjecie.addEventListener("click", () => {
+            powiekszoneZdjecie.src = zdjecie.src;
+            powiekszoneZdjecie.alt = zdjecie.alt;
+            podglad.showModal();
+        });
+    });
+
+    document.querySelector("#zamknij-podglad").addEventListener("click", () => {
+        podglad.close();
+    });
+</script>
 </body>
 </html>
