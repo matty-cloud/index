@@ -1,0 +1,240 @@
+:root {
+    color-scheme: dark;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #16181b;
+    color: #f5c518;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+    background:
+        radial-gradient(circle at top, rgba(245, 197, 24, 0.08), transparent 30rem),
+        #16181b;
+    color: #f5c518;
+    text-align: center;
+}
+
+body::before,
+body::after {
+    position: fixed;
+    inset-block: 0;
+    z-index: 0;
+    width: clamp(90px, 15vw, 190px);
+    background:
+        repeating-conic-gradient(
+            from 0deg,
+            rgba(245, 197, 24, 0.15) 0 25%,
+            rgba(255, 255, 255, 0.035) 0 50%
+        )
+        0 0 / 42px 42px;
+    pointer-events: none;
+    content: "";
+}
+
+body::before {
+    left: 0;
+    mask-image: linear-gradient(to right, #000 0%, rgba(0, 0, 0, 0.65) 45%, transparent 100%);
+}
+
+body::after {
+    right: 0;
+    mask-image: linear-gradient(to left, #000 0%, rgba(0, 0, 0, 0.65) 45%, transparent 100%);
+}
+
+header,
+main,
+footer {
+    position: relative;
+    z-index: 1;
+    width: min(100% - 2rem, 960px);
+    margin-inline: auto;
+}
+
+header {
+    padding: 3rem 0 2rem;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    line-height: 0.95;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+}
+
+h2,
+h3 {
+    font-size: clamp(1.6rem, 4vw, 2.25rem);
+    letter-spacing: -0.02em;
+}
+
+p {
+    max-width: 720px;
+    margin-inline: auto;
+    line-height: 1.75;
+}
+
+nav ul,
+#kontakt > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem 1.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: #ffd83d;
+    font-weight: 700;
+    text-underline-offset: 0.3em;
+}
+
+a:hover {
+    color: #fff0a3;
+}
+
+section {
+    margin-bottom: 1.25rem;
+    padding: clamp(1.5rem, 5vw, 3rem);
+    overflow: hidden;
+    border: 1px solid rgba(245, 197, 24, 0.22);
+    border-radius: 1.25rem;
+    background: #202327;
+    box-shadow: 0 18px 55px rgba(0, 0, 0, 0.22);
+}
+
+form,
+fieldset {
+    display: grid;
+    width: min(100%, 560px);
+    gap: 0.75rem;
+    margin: 1.5rem auto 0;
+    padding: 1.25rem;
+    border: 1px solid rgba(245, 197, 24, 0.35);
+    border-radius: 0.9rem;
+    text-align: center;
+}
+
+label {
+    font-weight: 700;
+}
+
+input,
+textarea,
+button {
+    max-width: 100%;
+    border: 1px solid #555b63;
+    border-radius: 0.65rem;
+    font: inherit;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    background: #101214;
+    color: #ffe16b;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 0.5rem;
+    accent-color: #f5c518;
+}
+
+button,
+input[type="submit"] {
+    cursor: pointer;
+    border-color: #f5c518;
+    padding: 0.85rem 1.25rem;
+    background: #f5c518;
+    color: #16181b;
+    font-weight: 800;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background: #ffdc47;
+}
+
+#galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#galeria h3,
+#galeria p {
+    flex-basis: 100%;
+}
+
+#galeria img {
+    width: min(100%, 300px);
+    aspect-ratio: 4 / 3;
+    border-radius: 0.8rem;
+    object-fit: cover;
+}
+
+table {
+    width: min(100%, 560px);
+    margin: 1.5rem auto;
+    border-collapse: collapse;
+}
+
+caption {
+    margin-bottom: 0.75rem;
+    font-weight: 800;
+}
+
+th,
+td {
+    padding: 0.75rem;
+    border: 1px solid rgba(245, 197, 24, 0.3);
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem 1.5rem;
+    padding: 2rem 0 3rem;
+}
+
+footer p {
+    flex-basis: 100%;
+    margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+    header,
+    main,
+    footer {
+        width: min(100% - 1rem, 960px);
+    }
+
+    section {
+        padding: 1.25rem 1rem;
+    }
+}
