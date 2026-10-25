@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart Cup v.2 - turniej kartingowy</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
         <h1>Cart Cup v.2</h1>
@@ -40,136 +42,175 @@
                 <label for="name">Imię i nazwisko</label>
                 <input type="text" id="name" name="name" placeholder="Jan Kowalski" required>
                 <label for="age">Wiek</label>
-                <input type="number" id="age" name="age" min="15" max="99"  required>
+                <input type="number" id="age" name="age" min="15" max="99" required>
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="Email@.com" required>
                 <label>
-                <input type="radio" name="wybor" value="opcja1">Zaawansowany</label>
-                <label>
-                <input type="radio" name="wybor" value="opcja2">Początkujący</label>
-                <label>
-                <input type="checkbox" name="zgoda" value="tak" required>Akceptuję regulamin</label>
-                <button type="submit">Zapisz się</button>
-            </form>
-            </section>
-            <section id="regulamin">
-                <h3>Regulamin</h3>
-                <p>
-                    1. Uczestnicy muszą mieć ukończone 15 lat.
-                    <br>
-                    2. Każdy uczestnik poniżej 18 roku życia musi posiadać pisemną zgodę rodzica lub opiekuna prawnego.
-                    <br>
-                    3. Każdy uczestnik musi posiadać ważny dokument tożsamości.
-                    <br>
-                    4. Wszyscy uczestnicy muszą przestrzegać zasad bezpieczeństwa na torze.
-                    <br>
-                    5. Organizator zastrzega sobie prawo do dyskwalifikacji uczestnika w przypadku naruszenia regulaminu.
-                </p>
-                
-                </section>
-                <section id="galeria">
-                    <h3>Galeria</h3>
-                    <p>
-                        Zobacz zdjęcia z poprzedniej edycji turnieju Cart Cup.
-                    </p>
-                    <img src="https://images.pexels.com/photos/5640576/pexels-photo-5640576.jpeg" alt="Zdjęcie z turnieju 1" style width="300px" height="auto">
-                    <img src="https://images.pexels.com/photos/5640523/pexels-photo-5640523.jpeg" alt="Zdjęcie z turnieju 2" style width="300px" height="auto">
-                    <img src="https://images.pexels.com/photos/5640586/pexels-photo-5640586.jpeg" alt="Zdjęcie z turnieju 3" style width="300px" height="auto">
-                    <img src="https://images.pexels.com/photos/5640579/pexels-photo-5640579.jpeg" alt="Zdjęcie z turnieju 4" style width="300px" height="auto">
-                </section>
-                <section id="wyniki">
-                    <h3>Wyniki z poprzedniej edycji</h3>
-                    <table>
-                        <caption>Top 3 Grupa zaawansowana</caption>
-                        <tr>
-                            <th>Miejsce</th>
-                        <th>Kierowca</th>
-                        <th>Czas</th>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>Gruby</td>
-                            <td>12.34</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Drajwer</td>
-                            <td>13.04</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>cFFaniaK</td>
-                                <td>15.23</td>
-                            </tr>
-                        
-                    </table>
-                    <table>
-                        <caption>Top 3 Grupa początkująca</caption>
-                        
-                        <tr>
-                            <th>Miejsce</th>
-                            <th>Kierowca</th>
-                            <th>Czas</th>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>Wojtek</td>
-                            <td>14.34</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Janek</td>
-                            <td>15.04</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Kuba</td>
-                            <td>16.23</td>
-                        </tr>
-                    </table>
-                </section>
-                <section id="kontakt">
-                    <h3>Kontakt</h3>
-                    <p>Masz pytania? Skontaktuj się z nami przez strone bądź napisz maila.</p>
                     <fieldset>
                         
-                        <legend>Zadaj nam pytanie</legend>
-                        
-                      <textarea name="pytanie" rows="5" cols="100" placeholder="Kiedy odbywa się turniej?"></textarea>
-                        <label><input type="submit" value="Wyślij pytanie"></label>
+                        <legend>Wybierz poziom zaawansowania</legend>
+                        <input type="radio" name="wybor" value="opcja1" id="zaawansowany">
+                        <label for="zaawansowany">Zaawansowany</label>
+                        <input type="radio" name="wybor" value="opcja2" id="poczatkujacy">
+                        <label for="poczatkujacy">Początkujący</label>
                     </fieldset>
-                    <ul>
-                 <li><a href="mailto:mateusz.mionskowski123@gmail.com">Napisz do nas maila</a></li>
+                </label>
+                <label>
+                    <input type="checkbox" name="zgoda" value="tak" required>Akceptuję regulamin</label>
+                <button type="submit">Zapisz się</button>
+            </form>
+        </section>
+        <section id="regulamin">
+            <h3>Regulamin</h3>
+            <ol>
+                <li> Uczestnicy muszą mieć ukończone 15 lat.</li>
+                
+                <li> Każdy uczestnik poniżej 18 roku życia musi posiadać pisemną zgodę rodzica lub opiekuna prawnego.</li>
+                
+                <li> Każdy uczestnik musi posiadać ważny dokument tożsamości.</li>
+                <li> Wszyscy uczestnicy muszą przestrzegać zasad bezpieczeństwa na torze.</li>
+                
+                <li> Organizator zastrzega sobie prawo do dyskwalifikacji uczestnika w przypadku naruszenia regulaminu.</li>
+            </ol>
+        </section>
+            <section id="galeria">
+                <h3>Galeria</h3>
+                <p>Zobacz zdjęcia z poprzedniej edycji turnieju Cart Cup.</p>
+
+                <div class="miniatury">
+                    <img src="https://images.pexels.com/photos/5640576/pexels-photo-5640576.jpeg"
+                        alt="Zdjęcie z turnieju 1" class="miniatura">
+                    <img src="https://images.pexels.com/photos/5640523/pexels-photo-5640523.jpeg"
+                        alt="Zdjęcie z turnieju 2" class="miniatura">
+                    <img src="https://images.pexels.com/photos/5640586/pexels-photo-5640586.jpeg"
+                        alt="Zdjęcie z turnieju 3" class="miniatura">
+                    <img src="https://images.pexels.com/photos/5640579/pexels-photo-5640579.jpeg"
+                        alt="Zdjęcie z turnieju 4" class="miniatura">
+                </div>
+
+                <div id="podglad-galerii" class="podglad-galerii" hidden>
+                    <div class="sterowanie-podgladem">
+                        <button id="poprzednie-zdjecie" type="button">← Poprzednie</button>
+                        <span id="licznik-zdjec" aria-live="polite"></span>
+                        <button id="nastepne-zdjecie" type="button">Następne →</button>
+                        <button id="zamknij-podglad" type="button">Zamknij</button>
+                    </div>
+                    <img id="powiekszone-zdjecie" src="" alt="">
+                </div>
+            </section>
+            <section id="wyniki">
+                <h3>Wyniki z poprzedniej edycji</h3>
+                <table>
+                    <caption>Top 3 Grupa zaawansowana</caption>
+                    <tr>
+                        <th>Miejsce</th>
+                        <th>Kierowca</th>
+                        <th>Czas</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Gruby</td>
+                        <td>12.34</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Drajwer</td>
+                        <td>13.04</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>cFFaniaK</td>
+                        <td>15.23</td>
+                    </tr>
+
+                </table>
+                <table>
+                    <caption>Top 3 Grupa początkująca</caption>
+
+                    <tr>
+                        <th>Miejsce</th>
+                        <th>Kierowca</th>
+                        <th>Czas</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Wojtek</td>
+                        <td>14.34</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Janek</td>
+                        <td>15.04</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Kuba</td>
+                        <td>16.23</td>
+                    </tr>
+                </table>
+            </section>
+            <section id="kontakt">
+                <h3>Kontakt</h3>
+                <p>Masz pytania? Skontaktuj się z nami przez strone bądź napisz maila.</p>
+                <form>
+                <fieldset>
+
+                    <legend>Zadaj nam pytanie</legend>
+                    <label for="pytanie">twoje pytanie</label>
+                        <textarea id="pytanie" name="pytanie" rows="5" cols="100" placeholder="Kiedy odbywa się turniej?"></textarea>
+                        <input type="submit" value="Wyślij pytanie">
+                    
+                </fieldset>
+                </form>
+                <ul>
+                    <li><a href="mailto:mateusz.mionskowski123@gmail.com">Napisz do nas maila</a></li>
                 </ul>
-                </section>
-            
-            </main>
+            </section>
+
+    </main>
 
     <footer>
         <p>&copy; 2026 Cart Cup</p>
         <a href="mailto:mateusz.mionskowski123@gmail.com">mateusz.mionskowski123@gmail.com</a>
-        <a href="phone:732853333">732853333</a>
+        <a href="tel:732853333">732853333</a>
     </footer>
-    <dialog id="podglad-zdjecia" aria-label="Podgląd zdjęcia">
-    <button id="zamknij-podglad" type="button" aria-label="Zamknij podgląd">×</button>
-    <img id="powiekszone-zdjecie" src="" alt="">
-</dialog>
 
-<script>
-    const podglad = document.querySelector("#podglad-zdjecia");
-    const powiekszoneZdjecie = document.querySelector("#powiekszone-zdjecie");
 
-    document.querySelectorAll("img").forEach((zdjecie) => {
-        zdjecie.addEventListener("click", () => {
-            powiekszoneZdjecie.src = zdjecie.src;
-            powiekszoneZdjecie.alt = zdjecie.alt;
-            podglad.showModal();
+    <script>
+        const miniatury = [...document.querySelectorAll("#galeria .miniatura")];
+        const podglad = document.querySelector("#podglad-galerii");
+        const duzeZdjecie = document.querySelector("#powiekszone-zdjecie");
+        const licznik = document.querySelector("#licznik-zdjec");
+        let aktualneZdjecie = 0;
+
+        function pokazZdjecie(indeks) {
+            aktualneZdjecie = (indeks + miniatury.length) % miniatury.length;
+
+            const miniatura = miniatury[aktualneZdjecie];
+            duzeZdjecie.src = miniatura.src;
+            duzeZdjecie.alt = miniatura.alt;
+            licznik.textContent = `${aktualneZdjecie + 1} / ${miniatury.length}`;
+        }
+
+        miniatury.forEach((miniatura, indeks) => {
+            miniatura.addEventListener("click", () => {
+                pokazZdjecie(indeks);
+                podglad.hidden = false;
+            });
         });
-    });
 
-    document.querySelector("#zamknij-podglad").addEventListener("click", () => {
-        podglad.close();
-    });
-</script>
+        document.querySelector("#poprzednie-zdjecie").addEventListener("click", () => {
+            pokazZdjecie(aktualneZdjecie - 1);
+        });
+
+        document.querySelector("#nastepne-zdjecie").addEventListener("click", () => {
+            pokazZdjecie(aktualneZdjecie + 1);
+        });
+
+        document.querySelector("#zamknij-podglad").addEventListener("click", () => {
+            podglad.hidden = true;
+        });
+    </script>
 </body>
+
 </html>
